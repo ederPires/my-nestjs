@@ -60,5 +60,5 @@ npm i bcrypt // isntalar o bcrypt
 
 npm i --save-dev @types/bcrypt // instalar o bcrypt, rodar novamente após ocultar o password
 
-
+nest g controller auth/partner-users // gerar um controller partner
 ```

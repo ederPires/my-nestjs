@@ -5,15 +5,13 @@ import { UserPresenter } from './users.presenter';
 
 @Controller('users')
 export class UsersController {
-
   constructor(private usersService: UsersService){
-
   }
 
   // criar usuário
   @Post()
   async create(@Body() data: CreateUserDto){ //Body converte texto em js
-    const user = await this.usersService.create(data);
+    const user = await this.usersService.createCommonUser(data);
     return new UserPresenter(user); //para ocultar password
   }
 }

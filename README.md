@@ -61,4 +61,12 @@ npm i bcrypt // isntalar o bcrypt
 npm i --save-dev @types/bcrypt // instalar o bcrypt, rodar novamente após ocultar o password
 
 nest g controller auth/partner-users // gerar um controller partner
+
+nest g controller auth // criar login
+
+login.dto.ts // criar
+
+nest g service auth // cria um serviço de autenticação
+
+npm install @nestjs/jwt
 ```
